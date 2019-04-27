@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* =font */
+@font-face{
+    font-family:'Noto Sans KR';font-style:normal;font-weight:200;
+    src: url(../fonts/notokr-light.woff2) format('woff2'),
+         url(../fonts/notokr-light.woff) format('woff'),
+         url(../fonts/notokr-light.eot) format('eot')
+}
+@font-face{
+    font-family:'Noto Sans KR';font-style:normal;
+    src: url(../fonts/notokr-regular.woff2) format('woff2'),
+         url(../fonts/notokr-regular.woff) format('woff'),
+         url(../fonts/notokr-regular.eot) format('eot')
+}
+@font-face{
+    font-family:'Noto Sans KR';font-style:normal;font-weight:500;
+    src: url(../fonts/notokr-medium.woff2) format('woff2'),
+         url(../fonts/notokr-medium.woff) format('woff'),
+         url(../fonts/notokr-medium.eot) format('eot')
+}
+@font-face{
+    font-family:'Noto Sans KR';font-style:normal;font-weight:700;
+    src: url(../fonts/notokr-bold.woff2) format('woff2'),
+         url(../fonts/notokr-bold.woff) format('woff'),
+         url(../fonts/notokr-bold.eot) format('eot')
+}
+
+/* =reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0}
+html{font-size:62.5%}
+body,h1,h2,h3,h4,h5,h6,select,input,textarea,button{font-family:'Noto Sans KR', Dotum,'돋움',Helvetica,'Apple SD Gothic Neo',sans-serif}
+body{-webkit-text-size-adjust:none;font-size:1.4rem;color:#222;word-break:break-word;word-wrap:break-word}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+ol,ul{list-style:none}
+em,address{font-style:normal}
+img,fieldset,iframe{border:0}
+img{max-width:100%;height:auto;vertical-align:top}
+a{color:#222;text-decoration:none}
+
+/* =skip navigation */
+#skip{position:relative;z-index:1000}
+#skip a{position:absolute;top:-5rem;left:0;padding:.6rem 1.5rem;border:.1rem solid #ed1c24;background-color:#231f20;color:#fff;opacity:0}
+#skip a:active,
+#skip a:focus{top:0;text-decoration:none;opacity:1;cursor:pointer}
+#skip span{display:inline-block}
+
+/* =layout */
+#wrap{min-width:320px}
+header{position:fixed;top:0;right:0;left:0;z-index:10;width:100%;height:7rem;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+header>.inr{overflow:hidden;position:relative;max-width:144rem;height:7rem;margin:0 auto;padding:0 4rem;box-sizing:border-box}
+header h1{margin-top:2rem;color:#708a81;font-size:2.5rem;font-weight:500}
+header nav{position:absolute;top:2.5rem;right:4rem}
+header .gnb:after{content:'';display:block;clear:both}
+header .gnb li{float:left}
+header .gnb li+li{margin-left:3rem}
+header .gnb li a{display:block;font-size:2rem}
+header .gnb li a:after{content:'';display:block;width:0;height:.2rem;background:#222;transition:all .2s ease-in-out}
+header .gnb li a:hover:after{width:100%}
+#container{overflow:hidden;width:100%;height:100%}
+#content{max-width:144rem;margin:7rem auto 0}
+footer{height:8rem;background:#e3ebe9}
+footer>.inr{max-width:144rem;margin:0 auto;padding-top:3rem}
+
+/* =content */
+[class^=cont]{padding:7rem 4rem 0;box-sizing:border-box}
+[class^=cont] h2{margin-bottom:3rem;color:#865b11;font-size:2.5rem;font-weight:normal}
+.cont01 .txt{font-size:3.5rem;line-height:1.2}
+.cont01 .txt>strong{padding-left:.5rem;font-weight:500}
+.cont01 .hashtag{padding-top:.5rem;font-size:2.5rem;color:#666}
+.cont01 .info_lst{overflow:hidden;margin-top:4rem;width:60rem;font-size:2rem}
+.cont01 .info_lst dt{float:left;clear:both;width:20rem;margin-bottom:.7rem;font-weight:500}
+.cont01 .info_lst dd{float:left;width:40rem;margin-bottom:.7rem}
+
+.cont02{padding:10rem 4rem}
+.cont02 .port_lst{margin:0 -2.5rem}
+.cont02 .port_lst:after{content:'';display:block;clear:both}
+.cont02 .port_lst li{float:left;width:33.33%;/*min-height:50rem;*/padding:2.5rem;box-sizing:border-box}
+.cont02 .port_lst .thumb{display:block;overflow:hidden;position:relative;width:100%;height:34rem;border:.1rem solid #ccc;background:#f9fafd;text-align:center;box-sizing:border-box}
+.cont02 .port_lst .thumb>p{position:absolute;top:0;right:0;bottom:0;left:0;padding-top:14rem;background-color:rgba(0,0,0,.73);box-sizing:border-box;color:#fff;font-size:2rem;line-height:1.5;text-align:center;opacity:0;transition:all .4s ease-in-out}
+.cont02 .port_lst .thumb:hover>p{opacity:1}
+.cont02 .port_lst .tit{display:block;margin:2rem 0 1rem;font-size:2.4rem;font-weight:500}
+.cont02 .port_lst dl{overflow:hidden;font-size:1.8rem}
+.cont02 .port_lst dt{float:left;clear:both;width:9.5rem;margin-bottom:.5rem;font-weight:500}
+.cont02 .port_lst dd{float:left;margin-bottom:.5rem}
+
+/* =page */
+.view h1{margin-bottom:4rem;font-size:3rem;font-weight:500}
+.lst_kb{overflow:hidden;margin:0 -1rem 6rem}
+.lst_kb li{float:left;margin-bottom:4rem;width:36rem;padding:0 1rem;box-sizing:border-box}
+.lst_kb li>img{border:1px solid #ccc}
+
+/* =Media Query :: Mobile */
+@media screen and (max-width:48rem){
+    header,
+    header>.inr{width:100%;padding:0}
+    header h1{font-size:2.5rem;text-align:center}
+    header nav{display:none}
+    [class^=cont]{padding:4rem 2rem 0}
+    [class^=cont] h2{margin-bottom:2.5rem;font-size:2.2rem}
+    .cont01 .txt{font-size:2.5rem}
+    .cont01 .hashtag{font-size:1.8rem}
+    .cont01 .info_lst{width:38rem;margin-top:3rem;font-size:1.4rem}
+    .cont01 .info_lst dt{width:11rem}
+    .cont01 .info_lst dd{width:auto}
+    .cont02 .port_lst{margin:0 0 6rem}
+    .cont02 .port_lst li{float:none;width:100%;padding:0}
+    .cont02 .port_lst li:not(:first-child){margin-top:4rem}
+    .cont02 .port_lst .thumb{height:28rem}
+    .cont02 .port_lst .thumb>img{height:28rem}
+    .cont02 .port_lst .thumb>p{padding-top:11rem}
+    .cont02 .port_lst .tit{font-size:2rem}
+    .cont02 .port_lst dl{font-size:1.5rem}
+    footer>.inr{text-align:center}
+    /* =page */
+    .view h1{font-size:2.2rem;text-align:center}
+    .lst_kb{margin:0}
+    .lst_kb li{float:none;width:32rem;margin:0 auto 3rem;padding:0}
+}
+@media screen and (max-width:320px){
+    .cont01 .info_lst,
+    .cont01 .info_lst dt,
+    .cont01 .info_lst dd{float:none;width:auto}
+    .lst_kb li{padding:0 1rem}
+}
