@@ -40,6 +40,11 @@ a{color:#222;text-decoration:none}
 
 /* =common */
 .blind{overflow:hidden;position:absolute;width:.1rem;height:.1rem;clip:rect(0 0 0 0);margin:-.1rem;color:transparent}
+#wrap{min-width:320px}
+#container{overflow:hidden;width:100%;height:100%}
+#content{max-width:144rem;margin:7rem auto 0}
+[class^=cont]{padding:7rem 4rem 0;box-sizing:border-box}
+[class^=cont] h2{margin-bottom:3rem;color:#865b11;font-size:2.5rem;font-weight:normal}
 
 /* =skip navigation */
 #skip{position:relative;z-index:1000}
@@ -49,7 +54,6 @@ a{color:#222;text-decoration:none}
 #skip span{display:inline-block}
 
 /* =layout */
-#wrap{min-width:320px}
 header{position:fixed;top:0;right:0;left:0;z-index:10;width:100%;height:7rem;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.1);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.1)}
 header>.inr{overflow:hidden;position:relative;max-width:144rem;height:7rem;margin:0 auto;padding:0 4rem;box-sizing:border-box}
 header h1{margin-top:2rem;color:#708a81;font-size:2.5rem;font-weight:500}
@@ -60,14 +64,10 @@ header .gnb li+li{margin-left:3rem}
 header .gnb li a{display:block;font-size:2rem}
 header .gnb li a:after{content:'';display:block;width:0;height:.2rem;background:#222;transition:all .2s ease-in-out}
 header .gnb li a:hover:after{width:100%}
-#container{overflow:hidden;width:100%;height:100%}
-#content{max-width:144rem;margin:7rem auto 0}
 footer{height:8rem;background:#e3ebe9}
 footer>.inr{max-width:144rem;margin:0 auto;padding-top:3rem}
 
 /* =content */
-[class^=cont]{padding:7rem 4rem 0;box-sizing:border-box}
-[class^=cont] h2{margin-bottom:3rem;color:#865b11;font-size:2.5rem;font-weight:normal}
 .cont01 .txt{font-size:3.5rem;line-height:1.2}
 .cont01 .txt>strong{padding-left:.5rem;font-weight:500}
 .cont01 .hashtag{padding-top:.5rem;font-size:2.5rem;color:#666}
@@ -89,7 +89,7 @@ footer>.inr{max-width:144rem;margin:0 auto;padding-top:3rem}
 .cont02 .port_lst dt{float:left;clear:both;width:9.5rem;margin-bottom:.5rem;font-weight:500}
 .cont02 .port_lst dd{float:left;margin-bottom:.5rem}
 
-/* =page */
+/* =page1 */
 .view h1{margin-bottom:4rem;font-size:3rem;font-weight:500}
 .lst_kb{overflow:hidden;margin:0 -1rem 6rem}
 .lst_kb li{float:left;margin-bottom:4rem;width:36rem;padding:0 1rem;box-sizing:border-box}
